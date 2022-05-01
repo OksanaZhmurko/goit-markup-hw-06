@@ -758,6 +758,77 @@ body {
   background-color: #2196f3;
 }
 
+
+.footer-form {
+  display: block;
+  margin-left:auto;
+}
+
+.text-send {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-form-input{
+width: 358px;
+height: 50px;
+padding: 15px 16px;
+background: #2F303A;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+padding: 15px 16px;
+transition-property: border;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.footer-form-input:focus{
+  outline: none;
+  border: 1px solid #2196f3;
+}
+
+.submit-footer{
+  width: 200px;
+  padding: 10px;
+  background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: 0;
+margin-left: 12px;
+
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+
+letter-spacing: 0.06em;
+color: #FFFFFF;
+transition-property: border;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.submit-footer::after{
+  content: "";
+  margin-left: 10px;
+  background-color: #FFFFFF;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon\ send-min.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.submit-footer:focus{
+  outline: none;
+  border: 1px solid #2196f3;
+}
+
+
 /*--------PORTFOLIO-------*/
 
 /*--------SECTION-------*/
