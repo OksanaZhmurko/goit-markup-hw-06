@@ -1054,9 +1054,9 @@ background-color: transparent;
 outline: none;
 cursor: pointer;
 padding-left: 40px;
-transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-property: border-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon{
@@ -1072,7 +1072,6 @@ transition-property: border;
 .modal-input:focus{
   border-color: #2196f3;
 }
-
 
 .modal-input:focus+.input-icon{
   fill: #2196f3;
@@ -1125,15 +1124,14 @@ text-align: center;
   border-bottom: 1px solid #2196F3;
 }
 
-
-
 .modal-check-text::before{
   content: "";
   width: 16px;
   height: 15px;
   border: 2px solid #303030;
-border-radius: 2px;
-margin-right: 7px;
+  border-radius: 2px;
+  margin-right: 7px;
+  
 }
 
 .modal-check:checked + .modal-check-text::before{
@@ -1142,12 +1140,21 @@ margin-right: 7px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: transparent;
+  transition-property:border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check:focus + .modal-check-text::before{
+  border: 2px solid #2196F3;
+}
+
+.modal-check:hover + .modal-check-text::before{
+  border: 2px solid #2196F3;
 }
 
 .input-text{
- 
-  font-size: 12px;
+ font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.01em;
 color: #757575;
@@ -1213,9 +1220,12 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .button-close-icon:hover {
 fill: #2196f3;
+}
+
+.button-close-icon:focus{
+  fill: #2196f3; 
 }
 
 .is-hidden {
