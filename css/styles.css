@@ -1223,17 +1223,19 @@ margin-bottom: 4px;
 .button-close-icon {
 fill: #000000;
 cursor: pointer;
-transition-property: fill;
+transition-property: fill, background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close-icon:hover {
-fill: #2196f3;
+ fill: #2196f3;
+ background-color: #FFFFFF;
 }
 
 .button-close-icon:focus{
   fill: #2196f3; 
+  background-color: #FFFFFF; 
 }
 
 .is-hidden {
